@@ -1,0 +1,50 @@
+Customer ID: 213312
+Customer Name: Jhay
+Customer Type: vip
+Customer Phone Number: 42141232
+============================
+Customer ID: 213312
+Customer Name: jdsjjs
+Customer Type: vip
+Customer Phone Number: 5599494
+============================
+Customer ID: 832818312
+Customer Name: sjdaj
+Customer Type: vip
+Customer Phone Number: 5599494
+============================
+Customer ID: 213312
+Customer Name: Jhay
+Customer Type: vip
+Customer Phone Number: 5599494
+============================
+Customer ID: 213312
+Customer Name: jhay
+Customer Type: vip
+Customer Phone Number: 5599494
+============================
+Customer ID: 213312
+Customer Name: jhya
+Customer Type: vip
+Customer Phone Number: 5599494
+============================
+Customer ID: 213312
+Customer Name: dsjahdsa
+Customer Type: vip
+Customer Phone Number: 519249812
+============================
+Customer ID: 213312
+Customer Name: jhay
+Customer Type: vip
+Customer Phone Number: 28381821
+============================
+Customer ID: 213312
+Customer Name: jshhda
+Customer Type: vip
+Customer Phone Number: 939291
+============================
+Customer ID: 321
+Customer Name: djsa
+Customer Type: vip
+Customer Phone Number: 321
+============================
