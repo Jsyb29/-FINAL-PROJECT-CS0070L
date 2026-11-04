@@ -1,6 +1,0 @@
-/**
- * PhoneNUm
- */
-public class PhoneNUm {
-
-}

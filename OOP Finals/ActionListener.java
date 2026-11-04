@@ -1,6 +1,0 @@
-/**
- * ActionListener
- */
-public interface ActionListener {
-
-}
