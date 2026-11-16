@@ -36,8 +36,13 @@ Burials: the name of the deceased, date of birth, date of death, burial date, an
  ## INSTALLATION PROCESS
  
 ##### Prerequisites
-
+``` 
 - Net Bens
 - JDK
 - Net Beans
-- Apache Derby ```
+- Apache Derby
+
+##### 1. Download the zip file and open it in Net Beans
+```
+https://github.com/Jsyb29/-FINAL-PROJECT-CS0070L
+
