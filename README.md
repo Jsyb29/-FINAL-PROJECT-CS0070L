@@ -69,7 +69,7 @@ Ensures your database URL, username, and password in src/graveyard/
 
 ##### 3. Compile and Run the Java Source Files
 ```
-Compile all the java class inside src/graveyard/
+Compile and run all the java class inside src/graveyard/
 ```
 
 
