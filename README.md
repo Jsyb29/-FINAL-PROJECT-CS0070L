@@ -43,6 +43,13 @@ Burials: the name of the deceased, date of birth, date of death, burial date, an
 - Apache Derby
 ```
 ##### 1. Download the zip file and open it in Net Beans
-
+```
 https://github.com/Jsyb29/-FINAL-PROJECT-CS0070L
+```
+
+##### 2. Add the Derby Jars
+```
+lib/derby-10.16.1.1.jar
+lib/derbyshared-10.16.1.1.jar
+```
 
