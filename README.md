@@ -32,3 +32,12 @@ Burials: the name of the deceased, date of birth, date of death, burial date, an
 - Date of death cannot be in the future
 - One burial per plot (UNIQUE constraint)
 - Input normalization (plot numbers upper-cased and de-spaced; names trimmed)
+
+ ## INSTALLATION PROCESS
+ 
+######Prerequisites
+
+``` bash Net Beans
+- JDK
+- Net Beans
+- Apache Derby ```
