@@ -36,7 +36,7 @@ Burials: the name of the deceased, date of birth, date of death, burial date, an
  ## INSTALLATION PROCESS
  
 ##### Prerequisites
-```
+
 - Net Bens
 - JDK
 - Net Beans
