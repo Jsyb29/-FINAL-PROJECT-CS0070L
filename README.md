@@ -47,9 +47,29 @@ Burials: the name of the deceased, date of birth, date of death, burial date, an
 https://github.com/Jsyb29/-FINAL-PROJECT-CS0070L
 ```
 
+
 ##### 2. Add the Derby Jars
 ```
 lib/derby-10.16.1.1.jar
 lib/derbyshared-10.16.1.1.jar
 ```
+
+## EEXECUTION PROCESS
+
+##### 1. Set Up the Database
+```
+sql/Graveyard_Database_Setup.sql
+sql/Graveyard_System_Data.sql
+```
+
+##### 2. Configure Database Connection
+```
+Ensures your database URL, username, and password in src/graveyard/
+```
+
+##### 3. Compile and Run the Java Source Files
+```
+Compile all the java class inside src/graveyard/
+```
+
 
