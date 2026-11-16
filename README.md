@@ -54,7 +54,7 @@ lib/derby-10.16.1.1.jar
 lib/derbyshared-10.16.1.1.jar
 ```
 
-## EEXECUTION PROCESS
+## EXECUTION PROCESS
 
 ##### 1. Set Up the Database
 ```
