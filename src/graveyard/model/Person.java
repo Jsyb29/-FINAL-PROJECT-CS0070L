@@ -4,7 +4,9 @@ import graveyard.util.Inputs;
 import java.time.LocalDate;
 import java.util.Objects;
 
-/** encapsulation and an abstract superclass for a person. */
+/** Abstract base class for a person — 
+keeps its fields private and only exposes them through getters. */
+
 public abstract class Person {
     private final String name;
     private final LocalDate birthDate;
