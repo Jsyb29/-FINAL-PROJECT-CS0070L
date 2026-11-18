@@ -2,6 +2,6 @@ package graveyard.model;
 
 import java.time.LocalDate;
 
-/** the values the frontend sends to register a burial. */
+/** The values the frontend sends over to register a burial. */
 public record BurialRequest(String name, LocalDate birthDate, LocalDate deathDate,
                             LocalDate burialDate, String plotNumber) { }
