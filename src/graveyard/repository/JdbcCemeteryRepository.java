@@ -106,7 +106,8 @@ public final class JdbcCemeteryRepository implements CemeteryRepository {
     @Override
     public BurialRecord insertBurial(BurialRequest request) {
         try (Connection c = database.connect()) {
-            // The UNIQUE constraint, not just a prior availability check, prevents double booking.
+            // It's the UNIQUE constraint not just checking availability first — that
+            // actually guards against double-booking a plot.
             c.setAutoCommit(false);
             try {
                 BurialRecord record = insertBurial(c, request);
