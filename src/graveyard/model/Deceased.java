@@ -4,7 +4,9 @@ import graveyard.exception.ValidationException;
 import java.time.LocalDate;
 import java.util.Objects;
 
-/** A deceased person IS A Person. Immutable values are safe to share with the UI. */
+/** A deceased person is a kind of Person. Since everything here is immutable, 
+it's safe to pass straight to the UI. */
+
 public final class Deceased extends Person {
     private final LocalDate deathDate;
 
