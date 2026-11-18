@@ -5,7 +5,11 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
-/**business logic depends on this contract, not SQL or a window. */
+/**
+ * This is the contract the business logic relies on, so it
+ * never has to know about SQL or the UI directly.
+ */
+
 public interface CemeteryRepository {
     List<Plot> findPlots();
     Optional<Plot> findPlot(String plotNumber);
