@@ -22,7 +22,7 @@ public class Main {
         UIManager.setLookAndFeel(
                 UIManager.getSystemLookAndFeelClassName());
     } catch (Exception ignored) {
-        // Use the default look and feel.
+        // Use the default look
     }
 
     SwingUtilities.invokeLater(
