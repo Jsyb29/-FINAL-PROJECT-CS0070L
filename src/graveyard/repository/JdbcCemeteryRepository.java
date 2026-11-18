@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-/** M8 JDBC implementation. All user values use PreparedStatement parameters. */
+/** Implementation of JDBC. All user values use PreparedStatement parameters. */
 public final class JdbcCemeteryRepository implements CemeteryRepository {
     private final Database database;
     private static final String PLOTS = """
