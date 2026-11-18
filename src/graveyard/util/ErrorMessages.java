@@ -5,7 +5,9 @@ import graveyard.exception.CemeteryException;
 public final class ErrorMessages {
     private ErrorMessages() { }
 
-    /** M5 pattern matching; keep the original Throwable for the developer's log. */
+    /** Uses pattern matching to pick a message, 
+    but keeps the original Throwable around for the developer's log. */
+    
     public static String forUser(Throwable error) {
         if (error instanceof CemeteryException cemeteryError) return cemeteryError.getMessage();
         if (error instanceof InterruptedException) return "The operation was interrupted.";
