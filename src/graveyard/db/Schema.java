@@ -6,11 +6,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/** Initializes a NEW database. Existing incompatible databases are never overwritten. */
+/** Initializes a NEW database. Existing incompatible databases are never overwritten */
 final class Schema {
     private Schema() { }
 
-    // M5 text blocks keep the SQL readable. M8 PK, FK, UNIQUE and CHECK constraints.
+    // text blocks keep the SQL readable. M8 PK, FK, UNIQUE and CHECK constraints
     private static final String[] DDL = {
         "CREATE TABLE schema_version (version_number INT PRIMARY KEY)",
         """
