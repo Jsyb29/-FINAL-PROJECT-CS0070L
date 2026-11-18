@@ -3,7 +3,7 @@ package graveyard.model;
 import java.time.LocalDate;
 import java.util.Objects;
 
-/**a burial record HAS A deceased person and refers to a plot. */
+/** A burial record holds a deceased person and points to a plot. */
 public final class BurialRecord {
     private final long recordId;
     private final Deceased deceased;
