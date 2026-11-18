@@ -66,13 +66,8 @@ import javax.swing.table.TableRowSorter;
 
 /**
  * Main window of the integrated Simple Graveyard System.
- *
  * The frontend owns: windows, tables, dialogs, listeners, input checks and messages.
  * The backend (CemeteryService) owns: business rules and the database.
- *
- * Flow: button click -> validation (EDT) -> BackgroundTasks worker -> CemeteryService
- *       -> success/error callback on the EDT -> table + status update.
- * Swing fields are only read on the EDT, and table models are only changed in callbacks.
  */
 @SuppressWarnings("serial") // Swing components are not used as a persistence format.
 public final class MainFrame extends JFrame {
@@ -155,10 +150,7 @@ public final class MainFrame extends JFrame {
                 },
                 error -> fail(error, ErrorMessages.forUser(error)));
     }
-
-    // ------------------------------------------------------------------
     // Menu
-    // ------------------------------------------------------------------
     private JMenuBar buildMenuBar() {
         JMenu file = new JMenu("File");
         JMenuItem refresh = guarded(new JMenuItem("Refresh"));
@@ -184,9 +176,7 @@ public final class MainFrame extends JFrame {
         return bar;
     }
 
-    // ------------------------------------------------------------------
     // Busy / ready state, messages
-    // ------------------------------------------------------------------
     private <T extends AbstractButton> T guarded(T button) {
         guardedButtons.add(button);
         return button;
@@ -267,10 +257,7 @@ public final class MainFrame extends JFrame {
         });
     }
 
-    // ------------------------------------------------------------------
     // Loading data
-    // ------------------------------------------------------------------
-
     /** Reloads everything. doneMessage == null keeps the current status text. */
     private void refreshAll(String doneMessage) {
         if (closing || service == null || pending > 0) {
@@ -301,10 +288,7 @@ public final class MainFrame extends JFrame {
                 s.totalPlots(), s.availablePlots(), s.occupiedPlots(), s.occupancyPercent(),
                 snap.burials.size()));
     }
-
-    // ------------------------------------------------------------------
     // Burial actions (shared by several tabs)
-    // ------------------------------------------------------------------
     private void startRegister() {
         if (notReady()) {
             return;
@@ -426,10 +410,7 @@ public final class MainFrame extends JFrame {
         });
         dialog.setVisible(true);
     }
-
-    // ------------------------------------------------------------------
     // Safe shutdown
-    // ------------------------------------------------------------------
     private void beginShutdown() {
         if (closing) {
             return;
@@ -459,9 +440,7 @@ public final class MainFrame extends JFrame {
         shutdown.start();
     }
 
-    // ------------------------------------------------------------------
     // Data holders
-    // ------------------------------------------------------------------
 
     /** EDT-only token: clearing or restarting a search invalidates older callbacks. */
     static final class SearchVersion {
@@ -530,10 +509,7 @@ public final class MainFrame extends JFrame {
         LocalDate getBurialDate() { return burialDate; }
         String getPlotNumber() { return plotNumber; }
     }
-
-    // ------------------------------------------------------------------
     // Input checks (no Swing, no database). The backend validates again.
-    // ------------------------------------------------------------------
     static final class InputValidator {
         private InputValidator() { }
 
@@ -580,10 +556,7 @@ public final class MainFrame extends JFrame {
             }
         }
     }
-
-    // ------------------------------------------------------------------
     // Table models
-    // ------------------------------------------------------------------
     abstract static class ListTableModel<T> extends AbstractTableModel {
         private final String[] columns;
         private List<T> rows = new ArrayList<>();
@@ -683,10 +656,7 @@ public final class MainFrame extends JFrame {
         // The row index changes when the table is sorted or filtered; convert it first.
         return viewRow < 0 ? null : model.getRow(table.convertRowIndexToModel(viewRow));
     }
-
-    // ------------------------------------------------------------------
     // Tab panels: one abstract parent, three children
-    // ------------------------------------------------------------------
     private abstract class RefreshablePanel extends JPanel {
         RefreshablePanel() {
             super(new BorderLayout(8, 8));
