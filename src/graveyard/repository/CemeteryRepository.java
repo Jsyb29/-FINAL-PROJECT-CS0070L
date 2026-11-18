@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
-/** M4 interface: business logic depends on this contract, not SQL or a window. */
+/**business logic depends on this contract, not SQL or a window. */
 public interface CemeteryRepository {
     List<Plot> findPlots();
     Optional<Plot> findPlot(String plotNumber);
