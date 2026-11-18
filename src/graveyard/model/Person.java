@@ -4,7 +4,7 @@ import graveyard.util.Inputs;
 import java.time.LocalDate;
 import java.util.Objects;
 
-/** M3/M4: encapsulation and an abstract superclass for a person. */
+/** encapsulation and an abstract superclass for a person. */
 public abstract class Person {
     private final String name;
     private final LocalDate birthDate;
