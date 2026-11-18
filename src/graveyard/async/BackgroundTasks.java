@@ -36,7 +36,7 @@ public final class BackgroundTasks implements Executor, AutoCloseable {
         });
     }
 
-    /** M4 multiple interfaces: Executor accepts a Runnable; AutoCloseable handles shutdown. */
+    /** Executor accepts a Runnable; AutoCloseable handles shutdown. */
     @Override
     public void execute(Runnable task) { worker.execute(Objects.requireNonNull(task)); }
 
