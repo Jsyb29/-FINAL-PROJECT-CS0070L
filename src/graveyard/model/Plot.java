@@ -2,7 +2,9 @@ package graveyard.model;
 
 import java.util.Objects;
 
-/** Read-only database snapshot. Changing this object cannot change the database. */
+/** A read-only snapshot of a database row. 
+Changing this object doesn't touch the actual database. */
+
 public final class Plot {
     private final String plotNumber;
     private final String section;
